@@ -41,4 +41,8 @@ public class PopupCameraPreferences {
     public boolean isLedAllowed() {
         return mSharedPrefs.getBoolean(LED_EFFECT_KEY, LED_EFFECT_DEFAULT_VALUE);
     }
+    
+    public String getLEDColor() {
+        return mSharedPrefs.getString(LED_COLOR_KEY, LED_COLOR_DEFAULT_VALUE);
+    }
 }
